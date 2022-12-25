@@ -25,14 +25,6 @@ Convert formulas from Octave to Go or/and C
 
 Getting some crazy formula in Octave:
 ```sh
-octave:45> E2(x) = simplify((int(f**3, x, -x0, x0)) / (2 * x0)) - M2
-E2(x) = (symfun) -M2 + a**3*x0**6/7 + 3*a*x0**4*(a*c + b**2)/5 + c**3 + c*x0**2*(a*c + b**2)
-octave:46> sympref display flat
-octave:47> f = a * (x**2) + b * x + c
-f = (sym) a*x**2 + b*x + c
-octave:48> E2(x) = simplify((int(f**3, x, -x0, x0)) / (2 * x0)) - M2
-E2(x) = (symfun) -M2 + a**3*x0**6/7 + 3*a*x0**4*(a*c + b**2)/5 + c**3 + c*x0**2*(a*c + b**2)
-octave:49> sympref display default
 octave:50> pkg load symbolic
 octave:51> f = a * (x**2) + b * x + c
 f = (sym)
